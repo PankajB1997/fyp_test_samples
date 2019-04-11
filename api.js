@@ -1,6 +1,6 @@
 function api(app) {
     const fs = require("fs");
-    app.get("/", function (request, response) {
+    app.get("/api/main", function (request, response) {
         fs.readFile("results/ref.txt", "utf8", function(err, reflines) {
             reflines = reflines + '';
             var refs = reflines.split("\n")

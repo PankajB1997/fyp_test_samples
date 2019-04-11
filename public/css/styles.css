@@ -1,21 +1,23 @@
-.container {
-    width: 100%;
+table,
+thead,
+tr,
+tbody,
+th,
+td {
+    text-align: center;
+    border: black;
+}
+
+#ngview {
+    width: 50%;
     margin: 0;
- }
+}
 
- table,
- thead,
- tr,
- tbody,
- th,
- td {
-   text-align: center;
- }
+#header {
+    position: sticky;
+    top: 0;
+}
 
- .table td {
-   text-align: center;
- }
-
- body {
-     background-color: #D9DFEA;
- }
+body {
+    background-color: #D9DFEA;
+}

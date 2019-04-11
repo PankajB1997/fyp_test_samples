@@ -1,12 +1,10 @@
-<div class="container">
-    <table class="table table-hover">
-        <tr>
-            <th>Actual logging message</th>
-            <th>Predicted logging message</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</div>
+<table class="table table-hover" border="1">
+    <tr>
+        <th>Actual logging message</th>
+        <th>Predicted logging message</th>
+    </tr>
+    <tr ng-repeat="row in vm.data">
+        <td>{{ row.ref }}</td>
+        <td>{{ row.pred }}</td>
+    </tr>
+</table>

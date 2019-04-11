@@ -8,7 +8,7 @@
         svc.getData = getData;
 
         function getData() {
-            return $http.get("/");
+            return $http.get("/api/main");
         };
     };
 })(angular.module("test_results"));
