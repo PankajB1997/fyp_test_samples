@@ -1,10 +1,12 @@
-<table class="table table-hover" border="1">
+<p><font size="5"><b>Exact Match: <font color="red">34.99 %</font>, Precision: <font color="red">59.02 %</font>, Recall: <font color="red">48.95 %</font>, F1 Score: <font color="red">53.51 %</font>, BLEU: <font color="red">25.17</font></b></font></p>
+<br>
+<table class="table table-hover">
     <tr>
-        <th>Actual logging message</th>
-        <th>Predicted logging message</th>
+        <th id="th-left"><font size="5">Actual logging message</font></th>
+        <th id="th-right"><font size="5">Predicted logging message</font></th>
     </tr>
     <tr ng-repeat="row in vm.data">
-        <td>{{ row.ref }}</td>
-        <td>{{ row.pred }}</td>
+        <td><font size="5">{{ row.ref }}</font></td>
+        <td><font size="5">{{ row.pred }}</font></td>
     </tr>
 </table>
